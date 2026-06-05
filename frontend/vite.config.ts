@@ -4,11 +4,15 @@ import path from "node:path";
 
 export default defineConfig({
   plugins: [react()],
+
+  base: "/fortnitebattlepass/",
+
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "src"),
     },
   },
+
   server: {
     host: "0.0.0.0",
     port: 5173,
